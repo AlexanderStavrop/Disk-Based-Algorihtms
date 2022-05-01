@@ -26,10 +26,11 @@ are 16 records.
 ## Results
 There are 10^4 random and unique keys created in range on 1 to 10^6. We search for 20 keys that exists in the file and find the average number of disk accesses is measured.
 
+
 <br></br>
 #  <a href="https://github.com/AlexanderStavrop/Disk-based-algorihtms/tree/master/2.%20Binary%20and%20Threaded%20Binary%20Trees%20Performance">Binary-and-Threaded-Binary-Trees-Performance</a>
 
-A program dedicated to test the performance of a binary search tree and a threaed binary search tree in comparisson with an ordered array. The performance is measured upon the assignments and the comparissons happening when inserting the keys and when search for them.
+A program dedicated to test the performance of a disk based binary search tree and a disk based threaed binary search tree in comparisson with an ordered array. The performance is measured upon the assignments and the comparissons happening when inserting the keys and when search for them.
 
 ## Binary Search Tree (BST)
 A binary search tree is created by modifying the code found in <a href="https://www.geeksforgeeks.org/binary-search-tree-data-structure/">This</a> tutorial.To represent the tree we use an Nx3 matrix, where N is the number of keys we want in our tree. 
@@ -60,15 +61,18 @@ For searching, we perform binary search, using the code found in <a href="hhttps
 ## Results
 There are 10^5 random and unique keys inserted in the trees. For testing, we perforom 100  single key searches, 100 random ranged searches with range of [K, K+100] and 100 random ranged searches with range of [K, K+1000] and calculating the average number comparisons happend. For the single key searches, we check if the key is present in the tree and for the ranged searches, we search for the lower bound of the range and then perform inorder search until we find the uper bound of the range.
 
+
+
 <br></br>
 #  <a href="https://github.com/AlexanderStavrop/Disk-based-algorihtms/tree/master/3.%20Disk%20Based%20Bplus%20Tree">Disk-Based-Bplus-Tree</a>
 
+A program dedicated to test the performance of a disk based b+tree search tree. The performance is measured upon the comparissons happening when inserting the keys and when search for them.
 
+## Binary Plus Tree (B+Tree)
+mpla mpla
 
-
-
-
-
+## Results
+mpla mpla
 
 
 
