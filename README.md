@@ -1,4 +1,4 @@
-# FileHandler
+#  <a href="https://github.com/AlexanderStavrop/Disk-based-algorihtms/tree/master/1.%20FileHandler">FileHandler</a>
 ## Measurements
 A program dedicated to measure the diffrence between the number of disc accesses required to find random keys. The keys and the corresponding data are stored 
 in four different ways. The data from the files is retrieved in pages of 128 bit.
@@ -28,7 +28,7 @@ are 16 records.
 There are 10^4 random and unique keys created in range on 1 to 10^6. We search for 20 keys that exists in the file and find the average number of disk accesses is measured.
 
 <br></br>
-# Binary-and-Threaded-Binary-Trees-Performance
+#  <a href="https://github.com/AlexanderStavrop/Disk-based-algorihtms/tree/master/2.%20Binary%20and%20Threaded%20Binary%20Trees%20Performance">Binary-and-Threaded-Binary-Trees-Performance</a>
 
 A program dedicated to test the performance of a binary search tree and a threaed binary search tree in comparisson with an ordered array. The performance is measured upon the assignments and the comparissons happening when inserting the keys and when search for them.
 
