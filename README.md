@@ -1,6 +1,5 @@
 #  <a href="https://github.com/AlexanderStavrop/Disk-based-algorihtms/tree/master/1.%20FileHandler">FileHandler</a>
-A program dedicated to measure the diffrence between the number of disc accesses required to find random keys. The keys and the corresponding data are stored 
-in four different ways. The data from the files is retrieved in pages of 128 bit.
+A program dedicated to measure the diffrence between the number of disc accesses required to find random keys. The keys and the corresponding data are stored in four different ways. The data from the files is retrieved in pages of 128 bit.
 
 ## Method A
 - A record is created containing a key (4 bits) and a character (28 bits), thus in every page there are 4 records.
@@ -30,7 +29,7 @@ There are 10^4 random and unique keys created in range on 1 to 10^6. We search f
 <br></br>
 #  <a href="https://github.com/AlexanderStavrop/Disk-based-algorihtms/tree/master/2.%20Binary%20and%20Threaded%20Binary%20Trees%20Performance">Binary-and-Threaded-Binary-Trees-Performance</a>
 
-A program dedicated to test the performance of a disk based binary search tree and a disk based threaed binary search tree in comparisson with an ordered array. The performance is measured upon the assignments and the comparissons happening when inserting the keys and when search for them.
+A program dedicated to test the performance of a disk based binary search tree and a disk based threaed binary search tree in comparisson with an ordered array. The performance is measured upon the assignments and the comparissons happening when inserting the keys and when searching for them.
 
 ## Binary Search Tree (BST)
 A binary search tree is created by modifying the code found in <a href="https://www.geeksforgeeks.org/binary-search-tree-data-structure/">This</a> tutorial.To represent the tree we use an Nx3 matrix, where N is the number of keys we want in our tree. 
@@ -66,10 +65,10 @@ There are 10^5 random and unique keys inserted in the trees. For testing, we per
 <br></br>
 #  <a href="https://github.com/AlexanderStavrop/Disk-based-algorihtms/tree/master/3.%20Disk%20Based%20Bplus%20Tree">Disk-Based-Bplus-Tree</a>
 
-A program dedicated to test the performance of a disk based b+tree search tree. The performance is measured upon the comparissons happening when inserting the keys and when search for them.
+A program dedicated to test the performance of a disk based b+tree search tree. The performance is measured upon the comparissons happening when inserting the keys, deleting some and when searching for them. The data is stored in the disk in pages of 256bytes each.
 
 ## Binary Plus Tree (B+Tree)
-mpla mpla
+A B+ Tree is created by modifying the code found in <ahref="https://github.com/sksksksk/BPlusTree/tree/master">This</a> github repository. To implement the tree, 2 file were created, the index and the data file.
 
 ## Results
 mpla mpla
