@@ -91,7 +91,4 @@ This implementation supports splitting nodes when there is overflow of keys
 The complexity of the B+Tree is O(logN(N)) for the inserting, searching and deleting keys. In the case of ranged search, the complexity of finding the lower bound is again O(logN(N)) and the complexity for the serial search until we get out of range is O(N), so complexity or ranged search is O(O(logN(N)) + O(N)).
 
 ## Results
-mpla mpla
-
-
-
+There are 10^5 random and unique keys inserted in the trees. For testing, we perforom 100 single key searches, 100 random ranged searches with range of [K, K+10] and 100 random ranged searches with range of [K, K+1000] and calculating the average number disk accesses. For the single key searches, we check if the key is present in the tree and for the ranged searches, we search for the lower bound of the range and then perform inorder search until we find the uper bound of the range.
