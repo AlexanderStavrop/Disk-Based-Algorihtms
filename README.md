@@ -68,7 +68,27 @@ There are 10^5 random and unique keys inserted in the trees. For testing, we per
 A program dedicated to test the performance of a disk based b+tree search tree. The performance is measured upon the comparissons happening when inserting the keys, deleting some and when searching for them. The data is stored in the disk in pages of 256bytes each.
 
 ## Binary Plus Tree (B+Tree)
-A B+ Tree is created by modifying the code found in <ahref="https://github.com/sksksksk/BPlusTree/tree/master">This</a> github repository. To implement the tree, 2 file were created, the index and the data file.
+A B+ Tree is created by modifying the code found in <a href="https://github.com/sksksksk/BPlusTree/tree/master">This</a> github repository. To implement the tree, 2 file were created, the index and the data file. 
+
+In contrast with the other 2 binary search tree implementations, every time we want to access a tree node, we read from the index file and we find the corresponding page on the data file from which we create a tree node.
+
+Every node has a specific format:
+- The first 20 bytes hold information about the node
+  - If the node is innner or leaf (4 bytes)
+  - The page of the parent node (4 bytes)
+  - The page of the left sibling (4 bytes)
+  - The page of the right sibling (4 bytes)
+  - The number of keys in each node (4 bytes)
+- The other 236 bytes are for the keys (Up to 29 keys can be stored)
+- The last 4 bytes remaining are used only by the leaf inner nodes to indicate whether the node is full or not 
+- The values stored in the tree represent:
+  - The page of the child node (inner nodes)
+  - The byteoffset for the corresponding key, in the data file (leaf nodes)
+
+
+This implementation supports splitting nodes when there is overflow of keys 
+
+The complexity of the B+Tree is O(logN(N)) for the inserting, searching and deleting keys. In the case of ranged search, the complexity of finding the lower bound is again O(logN(N)) and the complexity for the serial search until we get out of range is O(N), so complexity or ranged search is O(O(logN(N)) + O(N)).
 
 ## Results
 mpla mpla
